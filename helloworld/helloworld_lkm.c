@@ -9,7 +9,7 @@ MODULE_DESCRIPTION("helloworld_lkm: helloword program for a loadable Kernel Modu
 MODULE_LICENSE("Dual MIT/GPL");
 MODULE_VERSION("0.1");
 
-static int __int helloworld_lkm_init(void)
+static int __init helloworld_lkm_init(void)
 {
     printk(KERN_INFO "hello, world\n");
     return 0; /* success */

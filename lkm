@@ -10,13 +10,13 @@ name=$(basename "${0}")
 # Parameter(s): the command to run
 runcmd()
 {
-    local SEP="-------------------------------"
-    [$# -eq 0] && return
-    echo "${SEP}
-    $*
-    ${SEP}"
-    eval "$@"
-    [ $? -ne 0 ] && echo " ^--[FAILED]"
+  local SEP="------------------------------"
+  [ $# -eq 0 ] && return
+  echo "${SEP}
+  $*
+  ${SEP}"
+  eval "$@"
+  [ $? -ne 0 ] && echo " ^--[FAILED]"
 }
 
 ### "main" here

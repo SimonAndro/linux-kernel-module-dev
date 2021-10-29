@@ -12,7 +12,6 @@
 # To get started, just type:
 #  make help
 #
-# For details, please refer the book, Ch 5.
 
 # To support cross-compiling for kernel modules:
 # For architecture (cpu) 'arch', invoke make as:
